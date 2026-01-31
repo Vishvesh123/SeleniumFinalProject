@@ -41,10 +41,10 @@ public static void openBrowser() {
 	options.addArguments("--disable-popup-blocking");
 	  options.addArguments("--incognito");
 	
-		options.addArguments("--disable-logging");
-		options.addArguments("--blink-settings=imagesEnabled=false"); // disable image loading
-		options.addArguments("--headless=new"); // optional: fastest execution
-	
+//		options.addArguments("--disable-logging");
+//		options.addArguments("--blink-settings=imagesEnabled=false"); // disable image loading
+//		options.addArguments("--headless=new"); // optional: fastest execution
+//	
 	  Map<String, Object> prefs = new HashMap<>();
 
 	  prefs.put("profile.default_content_setting_values.notifications", 2); // block notifications
