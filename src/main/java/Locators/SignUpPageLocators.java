@@ -15,6 +15,4 @@ public WebElement email;
 @FindBy(xpath="//*[@id=\"form\"]/div/div/div[3]/div/form/button")
 public WebElement button;
 
-
-
 }

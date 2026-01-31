@@ -24,6 +24,15 @@ public class ProductPageLocators {
 	@FindBy(xpath = "//*[@id=\"cartModal\"]/div/div/div[3]/button")
 	public WebElement continueShoping;
 	
+	@FindBy(xpath = "ancestor::div[@class='col-sm-4']//a[contains(text(),'View Product')]")
+	public WebElement selectedProduct;
+	
+	
+	@FindBy(xpath = "//*[contains(text(),'Added') or contains(text(),'added to cart')]")
+	public WebElement addedMsg;
+	
+	
+	
 	
 }
 

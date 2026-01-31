@@ -7,55 +7,55 @@ import org.testng.annotations.*;
 import com.aventstack.extentreports.Status;
 
 import Browser.browser;
+
 import Pages.HomePage;
-import Pages.ProductPage;
-import ScreenShot.capture;
+import Pages.LoginPage;
+
 
 public class Test5 {
-
+	
 	@BeforeMethod
 	public void openBrowser() {
 		browser.openBrowser();
 	}
-
+	
 	@DataProvider(name="data5")
 	public Object[][] data() throws Exception {
-		Object[][] arrobj = {
-			{"Automation Exercise", "TSHIRTS", "1500", "Added"}
+		Object[][] arrobj = { 
+			{
+				"Automation Exercise", "Suresh",
+				"suresh03@gmail.com", "Test@123",
+			}
 		};
 		return arrobj;
 	}
-
+	
 	@Test(dataProvider="data5")
-	public void filterProductAndAddToCart(String wait, String product, String price, String expectedText) throws Exception {
+	public void login(String wait, String verification,String mail, String pwd) throws Exception {
+		
 		browser.extent.attachReporter(browser.reporter);
-		browser.logger1=browser.extent.createTest("Clicking Add to Cart button");
-		browser.logger1.log(Status.INFO, "Checking the Added Message");
+		browser.logger1=browser.extent.createTest("Clicking Login Button");
+		browser.logger1.log(Status.INFO, "Checking the Name as logged In");
 		try {
 		browser.navigateURL(wait);
+		HomePage.clickSignUp();
 		
-		HomePage.clickProduct();
+	    LoginPage.enterMail(mail);
+		LoginPage.enterPassword(pwd);
+		LoginPage.clickButton();
 		
-		ProductPage.searchProduct(product);
-
-		boolean found = ProductPage.filterAndClickProductByPrice(price);
-		Assert.assertTrue(found, "No product found with price: " + price);
-		
-		ProductPage.clickAddToCart();
-		capture.screenShot("AddToCart");
-
-		String msg = ProductPage.getAddMessage();
-		Assert.assertTrue(msg.toLowerCase().contains(expectedText.toLowerCase()));
-		browser.logger1.log(Status.PASS, "Product Added to the cart");
-		Reporter.log("Test case 5: Product with price " + price + " added to cart successfully.");
+		String name = LoginPage.loggedInName();
+		System.out.print(name);
+		Assert.assertEquals(name, verification);
+		browser.logger1.log(Status.PASS, "Log In Success");
+		Reporter.log("Test case 5 Login Assertion passed");
 		}catch(Exception e) {
 			System.out.println("Test 5 failed"+e);
-			browser.logger1.log(Status.FAIL, "Product not Added to the cart");
+			browser.logger1.log(Status.FAIL, "Log In Failed");
 		}
 		browser.extent.flush();
-		
 	}
-
+	
 	@AfterMethod
 	public void close() throws Exception {
 		browser.closeBrowser();

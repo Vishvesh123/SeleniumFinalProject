@@ -33,9 +33,6 @@ public static void clickSignUp() {
 public static void clickDeleteAccount() {
 	obj = PageFactory.initElements(driver, HomePageLocators.class);
 	wait.until(ExpectedConditions.elementToBeClickable(obj.deleteAccountLink));
-	
-	// close any ad overlay if present
-	
 	obj.deleteAccountLink.click();
 }
 

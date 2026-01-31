@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class CheckoutPageLocators {
 	
-	@FindBy(xpath = "//*[@id=\"cartModal\"]/div/div/div[2]/p[2]/a/u")
+	@FindBy(xpath = "//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[3]/a")
 	public WebElement viewCartLink;
 	
 	@FindBy(xpath = "//a[normalize-space()='Proceed To Checkout']")
@@ -34,5 +34,8 @@ public class CheckoutPageLocators {
 	
 	@FindBy(xpath = "//p[contains(text(),'Congratulations') or contains(text(),'Your order has been confirmed')]")
 	public WebElement confirmationMsg;
+	
+	 @FindBy(xpath = "//*[@id=\"form\"]/div/div/div/h2/b")
+	 public WebElement accountDeleatedMsg;
 }
 

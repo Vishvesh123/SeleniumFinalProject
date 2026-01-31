@@ -34,7 +34,6 @@ public class ProductPage extends browser {
 		for (WebElement block : blocks) {
 			String blockText = block.getText();
 			if (blockText.contains(price)) {
-				
 				WebElement viewProduct = block.findElement(
 						By.xpath("ancestor::div[@class='col-sm-4']//a[contains(text(),'View Product')]"));
 				viewProduct.click();
@@ -50,9 +49,8 @@ public class ProductPage extends browser {
 	}
 
 	public static String getAddMessage() {
-		By addedMsg = By.xpath("//*[contains(text(),'Added') or contains(text(),'added to cart')]");
-		wait.until(ExpectedConditions.visibilityOfElementLocated(addedMsg));
-		return driver.findElement(addedMsg).getText();
+		wait.until(ExpectedConditions.visibilityOf(obj.addedMsg));
+		return obj.addedMsg.getText();
 	}
 	
 	public static void clickContinueShop() {

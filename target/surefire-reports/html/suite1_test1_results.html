@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">Test</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">TestCases.Test1<br>TestCases.Test2<br>TestCases.Test3<br>TestCases.Test4<br>TestCases.Test5<br>TestCases.Test6<br>TestCases.Test7<br>TestCases.Test8<br></th>
+	    <th id="testClassNameId" hidden="true">Test1<br>Test2<br>Test3<br>Test4<br>Test5<br>Test6<br>Test7<br>Test8<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\asus\eclipse-workspace\E-ComTesting\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:57</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>11</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="green">PASS</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+																																								
+				
+				
+												<tr>
+			<td class="time">1769855644751</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('5ec6dd15-cac1-4633-bbb5-d977ef881597','block');changeSingleIcon('span-5ec6dd15-cac1-4633-bbb5-d977ef881597');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test1</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data1"] &nbsp;&nbsp;<span id='span-5ec6dd15-cac1-4633-bbb5-d977ef881597' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855644751</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Navigate</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>3.298s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "Exercise"</span><br>
+				<div class="stackTrace" id="5ec6dd15-cac1-4633-bbb5-d977ef881597" style="display: block;">
+												Testcase 1 Title Asssertion pass<br>
+								</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1769855648790</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('a77f92f5-2ea5-4903-a68e-a39f728f3b60','block');changeSingleIcon('span-a77f92f5-2ea5-4903-a68e-a39f728f3b60');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test2</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data2"] &nbsp;&nbsp;<span id='span-a77f92f5-2ea5-4903-a68e-a39f728f3b60' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855648790</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>clickSignUp</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>3.058s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "New User Signup!"</span><br>
+				<div class="stackTrace" id="a77f92f5-2ea5-4903-a68e-a39f728f3b60" style="display: block;">
+												Testcase 2 Assertion passeed<br>
+								</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1769855652628</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('00423089-ce11-499e-8653-1596d7fe7309','block');changeSingleIcon('span-00423089-ce11-499e-8653-1596d7fe7309');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test3</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data3"] &nbsp;&nbsp;<span id='span-00423089-ce11-499e-8653-1596d7fe7309' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855652628</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>clickSignUp</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>3.951s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "ENTER ACCOUNT INFORMATION", "Suresh", "suresh0062@gmail.com"</span><br>
+				<div class="stackTrace" id="00423089-ce11-499e-8653-1596d7fe7309" style="display: block;">
+												Test case 3 Create Account heading Assertion passed<br>
+								</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1769855657321</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('eca29863-a7f8-416c-a9f6-5e26fa831202','block');changeSingleIcon('span-eca29863-a7f8-416c-a9f6-5e26fa831202');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test4</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data4"] &nbsp;&nbsp;<span id='span-eca29863-a7f8-416c-a9f6-5e26fa831202' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855657321</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>createAccount</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>4.606s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "ACCOUNT CREATED!", "Suresh", "suresh03@gmail.com", "Test@123", "10", "5", "1990", "Suresh", "Kumar", "MyCompany", "123 Main Street", "Building 2", "India", "Maharashtra", "Mumbai", "400001", "9876543210"</span><br>
+				<div class="stackTrace" id="eca29863-a7f8-416c-a9f6-5e26fa831202" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1769855662802</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('b0b449d7-0062-485b-9ea7-1867104d322c','block');changeSingleIcon('span-b0b449d7-0062-485b-9ea7-1867104d322c');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test5</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data5"] &nbsp;&nbsp;<span id='span-b0b449d7-0062-485b-9ea7-1867104d322c' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855662802</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>login</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>5.901s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "Suresh", "suresh03@gmail.com", "Test@123"</span><br>
+				<div class="stackTrace" id="b0b449d7-0062-485b-9ea7-1867104d322c" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1769855669496</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('cb270990-5864-4caa-a809-10e059e901a3','block');changeSingleIcon('span-cb270990-5864-4caa-a809-10e059e901a3');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test6</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data5"] &nbsp;&nbsp;<span id='span-cb270990-5864-4caa-a809-10e059e901a3' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855669496</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>filterProductAndAddToCart</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>5.199s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "TSHIRTS", "1500", "Added"</span><br>
+				<div class="stackTrace" id="cb270990-5864-4caa-a809-10e059e901a3" style="display: block;">
+												Test case 5: Product with price 1500 added to cart successfully.<br>
+								</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1769855675493</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('072d6a35-a677-4637-ae77-68ec115d5984','block');changeSingleIcon('span-072d6a35-a677-4637-ae77-68ec115d5984');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test7</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data5"] &nbsp;&nbsp;<span id='span-072d6a35-a677-4637-ae77-68ec115d5984' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855675493</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>login</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+						<span class="duration"><b>Duration: </b>6.493s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "Suresh", "suresh03@gmail.com", "Test@123"</span><br>
+				<div class="stackTrace" id="072d6a35-a677-4637-ae77-68ec115d5984" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1769855681987</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('b3235883-147d-43c2-a11e-3be1be153f34','block');changeSingleIcon('span-b3235883-147d-43c2-a11e-3be1be153f34');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test7</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data6"] &nbsp;&nbsp;<span id='span-b3235883-147d-43c2-a11e-3be1be153f34' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855681987</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>filterProductAndAddToCart</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>2</font></span><br>
+						<span class="duration"><b>Duration: </b>3.618s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "TSHIRTS", "1500", "Added"</span><br>
+				<div class="stackTrace" id="b3235883-147d-43c2-a11e-3be1be153f34" style="display: block;">
+												Test case 5: Product with price 1500 added to cart successfully.<br>
+								</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1769855694372</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('eabf4de0-8b14-438c-83d9-26e7c5ffe6ce','block');changeSingleIcon('span-eabf4de0-8b14-438c-83d9-26e7c5ffe6ce');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test8</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data7"] &nbsp;&nbsp;<span id='span-eabf4de0-8b14-438c-83d9-26e7c5ffe6ce' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855694372</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>placeOrder</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>2</font></span><br>
+						<span class="duration"><b>Duration: </b>3.726s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "Suresh Kumar", "1234567890123456", "321", "12", "2028", "Congratulations"</span><br>
+				<div class="stackTrace" id="eabf4de0-8b14-438c-83d9-26e7c5ffe6ce" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1769855686470</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('2eacaa53-22ab-44e8-b93f-f2465a28848b','block');changeSingleIcon('span-2eacaa53-22ab-44e8-b93f-f2465a28848b');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test8</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data5"] &nbsp;&nbsp;<span id='span-2eacaa53-22ab-44e8-b93f-f2465a28848b' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855686470</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>login</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>7.901s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Automation Exercise", "Suresh", "suresh03@gmail.com", "Test@123"</span><br>
+				<div class="stackTrace" id="2eacaa53-22ab-44e8-b93f-f2465a28848b" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1769855698099</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('5382fd37-8b6e-423c-93e9-f6b8565ba820','block');changeSingleIcon('span-5382fd37-8b6e-423c-93e9-f6b8565ba820');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>TestCases.Test8</div>
+			<div style="float:right;">@Test @ with DataProvider : ["data8"] &nbsp;&nbsp;<span id='span-5382fd37-8b6e-423c-93e9-f6b8565ba820' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1769855698099</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>deleteAccount</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>3</font></span><br>
+						<span class="duration"><b>Duration: </b>3.145s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"ACCOUNT DELETED!"</span><br>
+				<div class="stackTrace" id="5382fd37-8b6e-423c-93e9-f6b8565ba820" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>

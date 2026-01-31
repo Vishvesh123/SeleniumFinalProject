@@ -88,51 +88,6 @@ public static void navigateURL(String title) {
 }
 
 
-
-//handling popup
-//Handling popup - simplified and reliable approach
-//Enhanced popup handler with multiple strategies
-//Handling popup - simplified and reliable approach
-//public static void handlePopupIfPresent() {
-// try {
-//     // Switch to the ad iframe if present
-//     WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(2));
-//     
-//     // Look for Google ad iframe
-//     List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
-//     
-//     for (WebElement iframe : iframes) {
-//         try {
-//             driver.switchTo().frame(iframe);
-//             
-//             // Try to find and click close button inside iframe
-//             try {
-//                 WebElement closeButton = shortWait.until(
-//                     ExpectedConditions.elementToBeClickable(
-//                         By.xpath("//div[@id='dismiss-button' or @aria-label='Close ad']")
-//                     )
-//                 );
-//                 closeButton.click();
-//                 System.out.println("✓ Popup closed successfully");
-//                 driver.switchTo().defaultContent();
-//                 return;
-//             } catch (TimeoutException e) {
-//                 // Close button not in this iframe, continue
-//             }
-//             
-//             driver.switchTo().defaultContent();
-//         } catch (Exception e) {
-//             driver.switchTo().defaultContent();
-//         }
-//     }
-//     
-// } catch (Exception e) {
-//     // No popup found - this is normal, just continue
-//     driver.switchTo().defaultContent();
-// }
-//}
-
-
 //Close Browser
 
 public static void closeBrowser() {

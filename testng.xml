@@ -10,6 +10,7 @@
       <class name="TestCases.Test5"/>
       <class name="TestCases.Test6"/>
       <class name="TestCases.Test7"/>
+       <class name="TestCases.Test8"/>
     </classes>
   </test> <!-- Test -->
     <listeners>
