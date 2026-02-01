@@ -36,10 +36,9 @@ public class Test6 {
 		HomePage.clickProduct();
 		
 		ProductPage.searchProduct(product);
-
+		
 		boolean found = ProductPage.filterAndClickProductByPrice(price);
 		Assert.assertTrue(found, "No product found with price: " + price);
-		
 		ProductPage.clickAddToCart();
 		capture.screenShot("AddToCart");
 

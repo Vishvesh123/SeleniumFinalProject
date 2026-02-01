@@ -70,14 +70,8 @@ public class Test7 {
 		browser.logger1=browser.extent.createTest("Clicking Add to Cart button After Login");
 		browser.logger1.log(Status.INFO, "Checking the Added Message");
 		try {
-//		//browser.navigateURL(wait);
-//		Thread.sleep(2000);
-//		browser.handlePopup();
-//		Thread.sleep(3000);
 		HomePage.clickProduct();
-		
 		ProductPage.searchProduct(product);
-
 		boolean found = ProductPage.filterAndClickProductByPrice(price);
 		Assert.assertTrue(found, "No product found with price: " + price);
 		

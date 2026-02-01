@@ -8,9 +8,9 @@ public class HomePageLocators {
 	
 @FindBy(xpath="//div[@class='logo pull-left']/a/img")
 public WebElement logo;
-@FindBy(xpath="//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a")
+@FindBy(css = "a[href='/login']")
 public WebElement signUpLink;
-@FindBy(xpath="//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[2]/a")
+@FindBy(css = "a[href='/products']")
 public WebElement productLink;
 
 //Delete Account link visible in header after login

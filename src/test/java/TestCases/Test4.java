@@ -63,8 +63,6 @@ public class Test4 {
 		Assert.assertEquals(text, verification);
 		browser.logger1.log(Status.PASS, "Account Created");
 		Reporter.log("Test case 4 Account Assertion passed");
-//		CreateAccount.contiue();
-//		HomePage.clickDeleteAccount();
 		}catch(Exception e) {
 			System.out.println("Test 4 failed"+e);
 			browser.logger1.log(Status.FAIL, "Account not Created");

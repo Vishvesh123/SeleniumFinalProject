@@ -6,10 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProductPageLocators {
 
-	@FindBy(xpath = "//a[normalize-space()='Products']")
-	public WebElement productsLink;
-	
-	@FindBy(xpath = "//*[@id=\"search_product\"]")
+	@FindBy(css = "input#search_product")
 	public WebElement searchBox;
 	
 	@FindBy(xpath = "//button[@id='submit_search']")
